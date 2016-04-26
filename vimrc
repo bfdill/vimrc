@@ -1,70 +1,73 @@
+                               " load plugins
 execute pathogen#infect()
 execute pathogen#helptags()
 
 if &compatible
-  set nocompatible
+  set nocompatible             " be iMproved, required
+  filetype off                 " be iMproved, required
 end
 
-filetype plugin indent on
+filetype plugin indent on      " required
 
-let mapleader = "\<Space>"
+set noerrorbells               " don't beep at me
+set number                     " turn on line numbers
+set backspace=indent,eol,start " make backspace more powerful
+set showcmd                    " show cmd I am typing
+
+set noswapfile                 " Don't use swapfile
+set nobackup                   " Don't create annoying backup files
+set nowritebackup
+set splitbelow                 " v-split to the right
+set splitright                 " split below
+set encoding=utf-8             " default encoding in utf-8
+set autowrite                  " automatically save before :next, :make etc.
+set autoread                   " automatically read changed files without asking
+set laststatus=2               " always show airline
+set hidden                     " allow unsaved background buffers and remember undo/marks
+
+set ruler                      " show cursor position all the time
+
+set fileformats=unix,dos,mac   " prefer unix over windows over os 9 formats
+
+set noshowmatch                " do not show the matching brackets by flickering
+set noshowmode                 " let airline show the mode
+set hlsearch                   " hilight found searches
+set incsearch                  " show the match while typing
+set ignorecase                 " case insensitive search
+set smartcase                  " but not when search includes an uppercase letter
+
+set wrap                       " wrap long lines
+set textwidth=79               " wrap at 79 chars
+set formatoptions=qrn1         " text formatting options see :help fo-table
+set autoindent                 " sanely indent
+set showmatch                  " briefly display matching bracket
+set smarttab                   " make the tab key smarter
+set expandtab                  " use the appropriate number of spaces
+set tabstop=2 shiftwidth=2     " always 2 spaces, always
+set shiftround                 " round indent to multiples of shiftwidth
+
+let mapleader = "\<Space>"     " space as leader is a game changer
+let g:mapleader = "\<Space>"   " space as leader is a game changer
 
 syntax enable
-set background=light
-colorscheme solarized
-
-" allow unsaved background buffers and remember marks/undo for them
-set hidden
+set background=dark
+colorscheme molokai
 
 " remember more commands and search history
 set history=10000
 
-set background=dark
-set encoding=utf-8
-set showcmd
-
-" Keep backup and .swp files out of the working directory
-" http://stackoverflow.com/a/15317146/86820
-set backupdir=~/.tmp//
-set directory=~/.tmp//
-
-" always show powerline
-set laststatus=2
-
-" Whitespace
-set nowrap
-set tabstop=2 shiftwidth=2
-set expandtab
-set backspace=indent,eol,start
-
-" Searching
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-
-" turn on line numbers
-set number
-
-" split the right way
-set splitbelow
-set splitright
-
-" highlight current line
-set cursorline
-
 " Insert only one space when joining lines that contain sentence-terminating
 " punctuation like `.`.
 set nojoinspaces
-
-" If a file is changed outside of vim, automatically reload it without asking
-set autoread
 
 " I don't always fold code, but when I do, I do it manually
 set foldmethod=manual
 
 set wildmenu                      " Enhanced command line completion.
 set wildmode=list:longest         " Complete files like a shell.
+
+" 80 columns yo
+let &colorcolumn=join(range(81,999),",")
 
 " remap jk to exit insert mode
 imap jk <Esc>
