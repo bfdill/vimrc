@@ -218,7 +218,7 @@ let g:tagbar_type_typescript = {
 \ ]
 \ }
 
-" cast should indent the same as switch
+" case should indent the same as switch
 let g:js_indent_flat_switch = 1
 
 " Disable tsuquyomi err checking in favor of syntastic
