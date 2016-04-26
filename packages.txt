@@ -1,37 +1,38 @@
-  ag.vim/
-  bufexplorer.zip/
-  delimitmate/
-  html5.vim/
-  matchtag/
-  nerdtree/
-  rainbow_parentheses.vim/
-  syntastic/
-  tabular/
-  tagbar/
-  tern_for_vim/
-  tsuquyomi/
-  typescript-vim/
-  ultisnips/
-  vim-airline-themes/
-  vim-airline/
-  vim-colors-solarized/
-  vim-commentary/
-  vim-css-color/
-  vim-dispatch/
-  vim-fugitive/
-  vim-gitgutter/
-  vim-javascript-syntax/
-  vim-javascript/
-  vim-js-indent/
-  vim-json/
-  vim-jsx/
-  vim-markdown/
-  vim-node/
-  vim-repeat/
-  vim-snippets/
-  vim-surround/
-  vim-tags/
-  vim-tmux-navigator/
-  vim-unimpaired/
-  vimproc.vim/
-  youcompleteme/
+ag.vim
+bufexplorer.zip
+delimitmate
+html5.vim
+matchtag
+molokai
+nerdtree
+rainbow_parentheses.vim
+syntastic
+tabular
+tagbar
+tern_for_vim
+tsuquyomi
+typescript-vim
+ultisnips
+vim-airline
+vim-airline-themes
+vim-colors-solarized
+vim-commentary
+vim-css-color
+vim-dispatch
+vim-fugitive
+vim-gitgutter
+vim-javascript
+vim-javascript-syntax
+vim-js-indent
+vim-json
+vim-jsx
+vim-markdown
+vim-node
+vim-repeat
+vim-snippets
+vim-surround
+vim-tags
+vim-tmux-navigator
+vim-unimpaired
+vimproc.vim
+youcompleteme
